@@ -386,8 +386,8 @@ function love.init()
 		title = "Untitled",
 		version = love._version,
 		window = {
-			width = 800,
-			height = 600,
+			width = 480,
+			height = 360,
 			x = nil,
 			y = nil,
 			minwidth = 1,
@@ -647,7 +647,7 @@ function love.errhand(msg)
 	end
 
 	if not love.graphics.isCreated() or not love.window.isOpen() then
-		local success, status = pcall(love.window.setMode, 800, 600)
+		local success, status = pcall(love.window.setMode, 480, 360)
 		if not success or not status then
 			return
 		end
