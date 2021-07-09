@@ -131,7 +131,7 @@ public:
 
 	virtual void setGraphics(graphics::Graphics *graphics) = 0;
 
-	virtual bool setWindow(int width = 420, int height = 360, WindowSettings *settings = nullptr) = 0;
+	virtual bool setWindow(int width = 480, int height = 360, WindowSettings *settings = nullptr) = 0;
 	virtual void getWindow(int &width, int &height, WindowSettings &settings) = 0;
 
 	virtual void close() = 0;
